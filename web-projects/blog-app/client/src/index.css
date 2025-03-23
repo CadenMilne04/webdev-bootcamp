@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow: hidden;
+    background: white;
+}
+
+.bg-gradient {
+	background: linear-gradient(-45deg, #439A97, #62B6B7, #97DECE, #CBEDD5);
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+

@@ -1,0 +1,104 @@
+//Main Colors
+$purple: #8739f9;
+$pink: #c651cd;
+$grey: #363636;
+
+//Dark Colors
+$dark-1: #100f10;
+$dark-2: #1b1b1b;
+$dark-3: #242424;
+
+html {
+    background-color: $grey;
+}
+
+.outline-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "nav nav"
+        "sidebar main";
+
+    grid-template-rows: 60px auto;
+    grid-template-columns: 250px auto;
+}
+
+.navbar {
+    grid-area: nav;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: $dark-3;
+    padding: 0 1rem;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    background-color: $dark-3;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
+
+.grid {
+    grid-area: main;
+
+    height: 100%;
+
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "a b c c"
+        "e f f g"
+        "i j k l"
+        "m n o p";
+
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: $dark-2;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    &:hover{
+            background: $dark-3;
+            box-shadow: 0 0 10px #c651cd80;
+
+    }
+}
+
+.card:nth-child(3) {
+    grid-area: c;
+}
+
+a:hover{
+     color: $purple;
+}

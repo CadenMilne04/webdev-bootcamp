@@ -1,0 +1,18 @@
+Users
+    ObjectID
+    Name
+    Email
+    Password
+    workoutNumber
+    completedWorkouts
+        WorkoutReferenceNumber
+        weight
+        reps
+
+Workout (1-9)
+    ObjectID
+    Type //(Chest/Back, Abs/Legs, Bi/Tri/Shoulder) (1-3)
+    excersize
+        name
+        bodyPart
+        description

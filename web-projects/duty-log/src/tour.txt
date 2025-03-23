@@ -1,0 +1,9 @@
+Tour
+{
+    Start: num
+
+    Resident Interactions: [String]
+    Staff Interactions: [String]
+
+    End: num
+}

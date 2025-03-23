@@ -1,0 +1,181 @@
+//Dark Colors
+$grey: #363636;
+$dark-1: #100f10;
+$dark-2: #1b1b1b;
+$dark-3: #242424;
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: $dark-2;
+}
+
+/* MOBILE NAVBAR */
+nav {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-radius: 1.25rem 1.25rem 0 0;
+	background-color: #eeeeee;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_list,
+.nav_list li,
+.nav_list li a {
+	display: flex;
+}
+
+.nav_list {
+	padding: 0px 20px 0px 20px;
+	justify-content: space-around;
+}
+
+.nav_list li {
+	flex-direction: column;
+	align-items: center;
+	row-gap: 0.25rem;
+}
+
+.nav_list li img {
+	width: 30px;
+}
+
+/* MOBILE HOMEPAGE */
+.home_grid {
+	height: 85vh;
+	display: grid;
+	gap: 1.2rem;
+
+	grid-template-areas:
+		"profile profile"
+		"height weight"
+		"quote quote"
+		"goals goals"
+		"goals goals";
+
+	grid-template-rows: repeat(1fr);
+	grid-template-columns: auto auto;
+}
+
+.profile {
+	grid-area: profile;
+	background: rgb(255, 0, 0);
+	background: linear-gradient(
+		146deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 193, 0, 1) 77%
+	);
+	color: white;
+
+	padding: 0px;
+	border-radius: 30px;
+	font-size: 50px;
+	display: grid;
+	place-items: center;
+}
+
+.height {
+	grid-area: height;
+	display: grid;
+	place-items: center;
+
+	background-color: $grey;
+	border-radius: 30px;
+
+	color: white;
+	font-size: 20px;
+}
+
+.weight {
+	grid-area: weight;
+
+	display: grid;
+	place-items: center;
+
+	background-color: $grey;
+	border-radius: 30px;
+
+	color: white;
+	font-size: 20px;
+}
+
+.quote {
+	grid-area: quote;
+
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 0 20px;
+	h5,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	gap: 4px;
+	justify-content: center;
+	background-color: $grey;
+	border-radius: 30px;
+
+	color: white;
+	font-size: 20px;
+}
+
+.goals {
+	grid-area: goals;
+
+	display: grid;
+	place-items: center;
+
+	background-color: $grey;
+	border-radius: 30px;
+
+	color: white;
+	font-size: 20px;
+}
+
+.workout-builder-form {
+	color: white;
+	display: grid;
+    gap: 0px;
+    height: 100vh;
+}
+
+.btn {
+	background: orange;
+	background: rgb(255, 0, 0);
+	background: linear-gradient(
+		146deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 193, 0, 1) 77%
+	);
+    border: none;
+	padding: 1px;
+	border-radius: 5px;
+    margin: 0px;
+    height: 50px;
+    width: auto;
+ }
+
+.wb-dropdown {
+	width: 80%;
+    height: 50px;
+    margin: 0px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+}
+
+.wb-dropdown-container{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    div{
+        width: auto;
+    }
+}
+
+.nav-buffer{
+    height:12vh;
+}

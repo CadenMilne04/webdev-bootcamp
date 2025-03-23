@@ -1,0 +1,12 @@
+notetakerDB
+    users
+        username
+        email
+        password
+        id
+    notes
+        id
+        title
+        body
+        date/time
+    
